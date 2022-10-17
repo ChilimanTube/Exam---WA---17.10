@@ -1,0 +1,149 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/*Nav*/
+nav {
+    background-color: #081b44;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 24px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    background-color: #f5f5f5;
+    color: black;
+    transition: 0.8s;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+article {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 0;
+}
+
+article h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+article p {
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 
+    'article1 article2 article3'
+    'article4 article5 article6'
+    'article7 article8 article9'
+    'article10 article11 article12';
+}
+
+.article1 {
+    background-color: #690989;
+    grid-area: article1;
+}
+
+.article2 {
+    background-color: #8c910b;
+    grid-area: article2;
+}
+
+.article3 {
+    background-color: #0b8d84;
+    grid-area: article3;
+}
+
+.article4 {
+    background-color: #8b0e23;
+    grid-area: article4;
+}
+
+.article5 {
+    background-color: #eb8303;
+    grid-area: article5;
+}
+
+.article6 {
+    background-color: #08bc56;
+    grid-area: article6;
+}
+
+.article7 {
+    background-color: #030712;
+    grid-area: article7;
+}
+
+.article8 {
+    background-color: #d211c5;
+    grid-area: article8;
+}
+
+.article9 {
+    background-color: #aa4c0d;
+    grid-area: article9;
+}
+
+.article10 {
+    background-color: #087e22;
+    grid-area: article10;
+}
+
+.article11 {
+    background-color: #0c3896;
+    grid-area: article11;
+}
+
+.article12 {
+    background-color: #cde60a;
+    grid-area: article12;
+}
+
+.images {
+    display: inline-flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 24px;
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 450px){
+    .grid-container {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
